@@ -1,6 +1,7 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Protest Riot", "Open Sans" sans-serif;
   background: #fff;
+  color: #434455;
 }
 
 ul,
@@ -106,7 +107,6 @@ img {
 }
 
 .benefits-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -137,7 +137,6 @@ img {
 }
 
 .team-career {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -164,7 +163,6 @@ img {
 }
 
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -174,7 +172,6 @@ footer {
   background-color: #2e2f42;
 }
 .footer-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
