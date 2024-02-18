@@ -51,13 +51,19 @@ a {
 }
 .logo-studio-top {
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 .logo-studio-bottom {
   color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
 /*===========navigation==========*/
+.border-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -65,7 +71,6 @@ a {
 .menu {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 
 .menu-list {
@@ -115,13 +120,11 @@ a {
 }
 
 /*==============hero===========*/
-.container-hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-}
 
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -167,17 +170,24 @@ button:focus {
 }
 
 /*=================benefits=========*/
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .benefits-list {
   display: flex;
   flex-direction: row;
-  width: calc((100% - 72px) / 4);
   gap: 24px;
 }
 
 .benefits-list-item {
-  min-width: 264px;
-  margin-top: 118px;
-  margin-bottom: 122px;
+  width: calc((100% - 72px) / 4);
   align-items: center;
 }
 
@@ -200,23 +210,20 @@ button:focus {
 /*=================team=========*/
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.container-team {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-}
+
 .team-list {
   display: flex;
-  width: calc((100% - 72px) / 4);
   gap: 24px;
 }
 
 .team-list-item {
   background-color: #ffffff;
   min-width: 264px;
-  margin-bottom: 120px;
   border-radius: 0 0 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 
 .team-title {
@@ -227,7 +234,12 @@ button:focus {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
-  margin-top: 120px;
+  margin-bottom: 72px;
+}
+
+.team-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-name {
@@ -236,8 +248,8 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin: 32px auto 8px auto;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-career {
@@ -246,10 +258,13 @@ button:focus {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
-  margin-bottom: 32px;
 }
 
 /*=================portfolio=========*/
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -257,7 +272,7 @@ button:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
-  margin: 120px auto 72px auto;
+  margin-bottom: 72px;
   text-align: center;
 }
 
@@ -267,7 +282,6 @@ button:focus {
   width: calc((100% - 48) / 3);
   column-gap: 24px;
   row-gap: 48px;
-  margin-bottom: 120px;
 }
 
 .portfolio-list-item {
@@ -300,14 +314,7 @@ button:focus {
 /*-------------footer-----------*/
 .bottom-side {
   background-color: #2e2f42;
-}
-.footer-container {
-  display: flex;
-}
-.footer-content {
-  max-width: 264px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding: 100px 0;
 }
 
 .footer-text {
@@ -315,5 +322,5 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
+  max-width: 264px;
 }
