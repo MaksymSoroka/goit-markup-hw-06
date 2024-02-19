@@ -49,15 +49,22 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+
+.logo-top {
+  margin-right: 76px;
+}
+
+.logo-bottom {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
 .logo-studio-top {
   color: #2e2f42;
-  margin-right: 76px;
 }
 
 .logo-studio-bottom {
   color: #f4f4fd;
-  display: inline-block;
-  margin-bottom: 8px;
 }
 
 /*===========navigation==========*/
@@ -171,8 +178,16 @@ button:focus {
 
 /*=================benefits=========*/
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefits {
