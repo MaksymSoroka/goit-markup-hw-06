@@ -519,6 +519,11 @@ a {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: #ffffff;
 }
 
 .footer-input-field:placeholder {
@@ -527,7 +532,7 @@ a {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer-subscribe-btn {
@@ -579,6 +584,8 @@ a {
   height: 100%;
   opacity: 0;
   visibility: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -616,7 +623,6 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
   padding: 0;
-  display: block;
   line-height: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -626,6 +632,7 @@ a {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
+  border: none;
 }
 
 .close-icon {
